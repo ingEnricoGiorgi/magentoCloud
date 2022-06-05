@@ -9,7 +9,7 @@
     <update handle="empty"/>
     <referenceContainer name="page.wrapper">
         <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content">
-        <container name="banner.container" htmlTag="div" htmlClass="prova-banner" after="store.menu">
+        <container name="banner.container" htmlTag="div" htmlClass="prova-banner" after="main.content">
             <block class="Magento\Framework\View\Element\Template" name="custom_banner" template="Magento_Theme::banner.phtml"></block>
         </container>
         </container>
