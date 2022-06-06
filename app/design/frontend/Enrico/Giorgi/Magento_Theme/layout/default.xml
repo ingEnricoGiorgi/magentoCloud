@@ -14,11 +14,12 @@
                 </arguments>
             </block>
         </referenceContainer>
+       
         <referenceContainer name="footer-container" htmlClass="page-footer container">
             <referenceContainer name="footer" htmlClass="footer content row">
             <referenceBlock name="footer_links">
             <arguments>
-                <argument name="css_class" xsi:type="string">footer links col</argument>
+                <argument name="css_class" xsi:type="string">footer links</argument>
             </arguments>
             </referenceBlock>
        
@@ -26,6 +27,7 @@
             <block class="Magento\Framework\View\Element\Template" name="test.trigger" template="Magento_Theme::footer_enrico.phtml"/>
         </referenceContainer>
         </referenceContainer>
+
         <referenceBlock name="report.bugs" remove="true"/>
         <move element="copyright" destination="before.body.end"/>
     </body>
