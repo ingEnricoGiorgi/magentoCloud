@@ -8,13 +8,13 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="footer" htmlClass="footer content row">
-         <block class="Magento\Framework\View\Element\Template" name="footer-3colonna" template="Magento_Theme::footer_img.phtml" />
+         <block class="Magento\Framework\View\Element\Template" name="footer-1colonna" template="Magento_Theme::footer_img.phtml" />
             <referenceBlock name="footer_links">
                     <arguments>
                         <argument name="css_class" xsi:type="string"> footer links col</argument>
                     </arguments>
             </referenceBlock> 
-         <block class="Magento\Framework\View\Element\Template" name="footer-3colonna" template="Magento_Theme::footer_txt.phtml" />
+         <block class="Magento\Framework\View\Element\Template" name="footer-2colonna" template="Magento_Theme::footer_txt.phtml" />
         </referenceContainer>
     </body>
 </page>
