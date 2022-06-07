@@ -11,7 +11,7 @@
          <block class="Magento\Framework\View\Element\Template" name="footer-3colonna" template="Magento_Theme::footer_img.phtml" />
             <referenceBlock name="footer_links">
                     <arguments>
-                        <argument name="css_class" xsi:type="string">footer links col</argument>
+                        <argument name="css_class" xsi:type="string"> footer links col</argument>
                     </arguments>
             </referenceBlock> 
          <block class="Magento\Framework\View\Element\Template" name="footer-3colonna" template="Magento_Theme::footer_txt.phtml" />
