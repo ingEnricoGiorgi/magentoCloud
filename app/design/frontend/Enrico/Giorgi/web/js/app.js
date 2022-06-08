@@ -5,4 +5,7 @@ requirejs(['jquery'], function ($) {
       const d = new Date();
       document.getElementById("demo").innerHTML = d.toLocaleTimeString();
     }
+//GLIDE
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"/>
+    new Glide('.glide').mount()
 });

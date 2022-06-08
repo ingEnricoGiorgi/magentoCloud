@@ -13,6 +13,7 @@
             
             <block class="Magento\Framework\View\Element\Template" name="custom_banner" template="Magento_Theme::banner.phtml"></block>
             <block class="Magento\Framework\View\Element\Template" name="custom_banner_dropdown" template="Magento_Theme::dropdown.phtml"></block>
+            <block class="Magento\Framework\View\Element\Template" name="glide" template="Magento_Theme::glide.phtml"></block>
         </container>
         </container>
         <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
@@ -21,5 +22,7 @@
 
         <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
     </referenceContainer>
-    <move element="custom_banner" as="alias_element" destination="page.top" after="navigation.sections"/>
+    <!-- i move vanno messi in fondo pagina -->
+    <move element="custom_banner" as="alias_banner" destination="page.top" after="navigation.sections"/>
+    <move element="glide" as="alias_glide" destination="page.top" after="navigation.sections"/>
 </layout>
