@@ -9,10 +9,11 @@
     <body>
         <referenceContainer name="header.panel">
 
-            <block name="test-glide" class="Magento\Framework\View\Element\Template" template="Magento_Theme::glide.phtml" />
         </referenceContainer>
         <referenceContainer name="content">
-            <block name="test-bootstrap" class="Magento\Framework\View\Element\Template" template="Magento_Theme::test-bootstrap.phtml" />
+		
+            <block name="test-glide" class="Magento\Framework\View\Element\Template" template="Magento_Theme::glide.phtml" />
+		<block name="test-bootstrap" class="Magento\Framework\View\Element\Template" template="Magento_Theme::test-bootstrap.phtml" />
         </referenceContainer>
         
         <referenceContainer name="footer" htmlClass="footer content row">
