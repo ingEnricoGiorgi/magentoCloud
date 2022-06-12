@@ -22,7 +22,9 @@
         '*': {
             bootstrap: 'js/bootstrap.min',
             '@popperjs/core': 'js/popper.min',
-            'glide' : 'js/glide.min'
+            'glide' : 'js/glide.min',
+            'app':'js/app',
+            'testjs':'js/testjs',
 
         }
     }
