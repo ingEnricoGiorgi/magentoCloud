@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--Bootstrap css-->
+        <css src="css/bootstrap.css" />
+        <css src="css/glide.core.min.css" />
+        <css src="css/glide.theme.min.css" />
+       <!-- <script src="js/app.js"/>
+       <script src="js/testjs.js"/> --> 
+   
+    
+    </head>
+</page>

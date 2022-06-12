@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="page.wrapper">
+        <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content">
+        <container name="banner.container" htmlTag="div" htmlClass="prova-banner" after="main.content">
+            
+            <block class="Magento\Framework\View\Element\Template" name="custom_banner" template="Magento_Theme::banner.phtml"></block>
+            <block class="Magento\Framework\View\Element\Template" name="custom_banner_dropdown" template="Magento_Theme::dropdown.phtml"></block>
+	 
+        </container>
+        </container>
+        <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+
+        
+
+        <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+    </referenceContainer>
+    <!-- i move vanno messi in fondo pagina -->
+    <move element="custom_banner" as="alias_banner" destination="page.top" after="navigation.sections"/>
+    <move element="glide" as="alias_glide" destination="page.top" after="navigation.sections"/>
+</layout>

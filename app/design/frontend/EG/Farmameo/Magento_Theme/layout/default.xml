@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+
+        </referenceContainer>
+        <referenceContainer name="content">
+		
+            <block name="test-glide" class="Magento\Framework\View\Element\Template" template="Magento_Theme::glide.phtml" />
+		<block name="test-bootstrap" class="Magento\Framework\View\Element\Template" template="Magento_Theme::test-bootstrap.phtml" />
+        </referenceContainer>
+        
+        <referenceContainer name="footer" htmlClass="footer content row">
+         <block class="Magento\Framework\View\Element\Template" name="footer-1colonna" template="Magento_Theme::footer_img.phtml" />
+            <referenceBlock name="footer_links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string"> footer links col</argument>
+                    </arguments>
+            </referenceBlock> 
+         <block class="Magento\Framework\View\Element\Template" name="footer-2colonna" template="Magento_Theme::footer_txt.phtml" />
+        </referenceContainer>
+    </body>
+</page>
