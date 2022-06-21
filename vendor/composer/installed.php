@@ -658,6 +658,15 @@
             'reference' => 'e6326e2739178799b1fe3fdd92029f9517fa17a0',
             'dev_requirement' => true,
         ),
+        'imaginaerum/magento2-language-fr-fr' => array(
+            'pretty_version' => '100.6.23',
+            'version' => '100.6.23.0',
+            'type' => 'magento2-language',
+            'install_path' => __DIR__ . '/../imaginaerum/magento2-language-fr-fr',
+            'aliases' => array(),
+            'reference' => 'd563a1eb6f1a316c8180f3bc38f42180260acd39',
+            'dev_requirement' => false,
+        ),
         'jms/metadata' => array(
             'pretty_version' => '2.6.1',
             'version' => '2.6.1.0',
@@ -4237,6 +4246,46 @@
             'reference' => '6ad81500d33f085ca2391f2b59e37bd34203b29b',
             'dev_requirement' => false,
         ),
+        'mageplaza/magento-2-german-language-pack' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'magento2-language',
+            'install_path' => __DIR__ . '/../mageplaza/magento-2-german-language-pack',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'b5f599b55d114125aeffe02c2c70af2fc676d507',
+            'dev_requirement' => false,
+        ),
+        'mageplaza/magento-2-italian-language-pack' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'magento2-language',
+            'install_path' => __DIR__ . '/../mageplaza/magento-2-italian-language-pack',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'f5b04611ad2c515e245550a2e359f6f45ce4330f',
+            'dev_requirement' => false,
+        ),
+        'mageplaza/module-core' => array(
+            'pretty_version' => '1.4.12',
+            'version' => '1.4.12.0',
+            'type' => 'magento2-module',
+            'install_path' => __DIR__ . '/../mageplaza/module-core',
+            'aliases' => array(),
+            'reference' => '85d1074fdee1259d438618c977ba6e21b76c4f39',
+            'dev_requirement' => false,
+        ),
+        'mageplaza/module-smtp' => array(
+            'pretty_version' => '4.7.2',
+            'version' => '4.7.2.0',
+            'type' => 'magento2-module',
+            'install_path' => __DIR__ . '/../mageplaza/module-smtp',
+            'aliases' => array(),
+            'reference' => 'e7e0d63649b05b0a4335108472b7a8a16e544094',
+            'dev_requirement' => false,
+        ),
         'monolog/monolog' => array(
             'pretty_version' => '1.27.0',
             'version' => '1.27.0.0',
@@ -4600,8 +4649,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher' => array(
@@ -4664,8 +4713,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0',
+                0 => '1.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'ralouphie/getallheaders' => array(

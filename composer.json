@@ -20,9 +20,13 @@
     },
     "version": "2.4.3-p2",
     "require": {
-        "magento/product-community-edition": "2.4.3-p2",
+        "imaginaerum/magento2-language-fr-fr": "*",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
-        "magento/composer-root-update-plugin": "~2.0"
+        "magento/composer-root-update-plugin": "~2.0",
+        "magento/product-community-edition": "2.4.3-p2",
+        "mageplaza/magento-2-german-language-pack": "dev-master",
+        "mageplaza/magento-2-italian-language-pack": "dev-master",
+        "mageplaza/module-smtp": "^4.7"
     },
     "autoload": {
         "exclude-from-classmap": [

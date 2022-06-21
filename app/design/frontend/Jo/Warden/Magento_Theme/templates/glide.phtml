@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="space space--medium">
+      <h2>Glide slider #1</h2>
+      <p>Glide as type slider</p>
+      <div id="glide-demo-slider1" class="slider glide glide--ltr glide--slider glide--swipeable">
+        <div class="slider__track glide__track" data-glide-el="track">
+          <ul class="slider__slides glide__slides"
+            style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2540px; transform: translate3d(255px, 0px, 0px);">
+            <li class="slider__frame glide__slide glide__slide--active">0</li>
+            <li class="slider__frame glide__slide">1</li>
+            <li class="slider__frame glide__slide">2</li>
+            <li class="slider__frame glide__slide">3</li>
+            <li class="slider__frame glide__slide">4</li>
+            <li class="slider__frame glide__slide">5</li>
+            <li class="slider__frame glide__slide">6</li>
+            <li class="slider__frame glide__slide">7</li>
+            <li class="slider__frame glide__slide">8</li>
+            <li class="slider__frame glide__slide">9</li>
+          </ul>
+        </div>
+
+        <div data-glide-el="controls">
+          <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev" data-glide-dir="<">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
+            </svg>
+          </button>
+
+          <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir=">">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+          <button class="slider__bullet glide__bullet glide__bullet--active" data-glide-dir="=0"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=3"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=4"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=6"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=7"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=8"></button>
+          <button class="slider__bullet glide__bullet" data-glide-dir="=9"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+require(['jquery', 'glide', 'domReady!'], function($,  Glide){
+    $(function(){
+        var glide = new Glide('#glide-demo-slider1', {
+            type: 'slider',
+            focusAt: 'center',
+            perView: 3
+        })
+        glide.mount()
+    });
+});
+</script>
+<!--
+<div if="faq">
+<h3>How can I place an order?</h3>
+<p>Choose a product and click on the image to view the the item's details and purchase options. To proceed with the order, add the item to the cart and proceed to check out. If the order has been placed and sent correctly, you will receive a confirmation e-mail. If you do not receive it, check the e-mail address you entered during the purchase or look for the confirmation e-mail in the junk mail.
+</p>
+<h3>I received an error message while placing my order, what can I do?</h3>
+<p>Our customer care is always at your disposal to help you with the purchase procedure. If you encounter a problem you can call us, chat with us, or send us a message by attaching a screenshot of the page where the error occurred. Alternatively you can write to customer.service@yamamay.com
+</p>
+<h3>How can I view the status of my order?</h3>
+<p>You can view the information of your orders (in progress and past), by logging into your account, in the "My orders" section. If you have not registered on yamamay.com, you will find all the information in the order confirmation email.
+</p>
+<h3>Is there a limit to the amount of products I can purchase?</h3>
+<p>There are generally no limits regarding quantity or amount. However, Yamamay may reserve the right to limit the purchase of some particular limited series products.
+</p>
+<h3>Can I change an order?</h3>
+<p>You can change the order until the payment is confirmed. Once payment is received, it is no longer possible to change the order. This includes changing the size or color, removing or adding items, changing the billing address and the payment method.
+</p>
+<h3>What can I do if the item I want is not in stock?</h3>
+<p>If the color or size of an item is out of stock, it will be marked as "Not available"; you can choose to be notified when it is back in stock by entering your email in the appropriate field and clicking on "Notify me".
+</p>
+<h3>Can I change an order?</h3>
+<p>No. You can put all the items you want in the shopping bag and decide not to complete your order.
+</p>  
+</div> -->

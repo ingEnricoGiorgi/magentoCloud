@@ -4305,6 +4305,53 @@
             "install-path": "../hoa/ustring"
         },
         {
+            "name": "imaginaerum/magento2-language-fr-fr",
+            "version": "100.6.23",
+            "version_normalized": "100.6.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Imaginaerum/magento2-language-fr-fr.git",
+                "reference": "d563a1eb6f1a316c8180f3bc38f42180260acd39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Imaginaerum/magento2-language-fr-fr/zipball/d563a1eb6f1a316c8180f3bc38f42180260acd39",
+                "reference": "d563a1eb6f1a316c8180f3bc38f42180260acd39",
+                "shasum": ""
+            },
+            "time": "2016-10-04T05:17:40+00:00",
+            "type": "magento2-language",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Magento2 French Language Pack (fr_FR)",
+            "homepage": "http://imaginaerum.github.io/magento2-language-fr-fr",
+            "keywords": [
+                "fr",
+                "fr_FR",
+                "french",
+                "i18n",
+                "language pack",
+                "magento",
+                "magento 2",
+                "magento2",
+                "module",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/Imaginaerum/magento2-language-fr-fr/issues",
+                "source": "https://github.com/Imaginaerum/magento2-language-fr-fr/tree/master"
+            },
+            "install-path": "../imaginaerum/magento2-language-fr-fr"
+        },
+        {
             "name": "jms/metadata",
             "version": "2.6.1",
             "version_normalized": "2.6.1.0",
@@ -21083,6 +21130,213 @@
                 "source": "https://github.com/magento/zf1/tree/1.14.5"
             },
             "install-path": "../magento/zendframework1"
+        },
+        {
+            "name": "mageplaza/magento-2-german-language-pack",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-german-language-pack.git",
+                "reference": "b5f599b55d114125aeffe02c2c70af2fc676d507"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-german-language-pack/zipball/b5f599b55d114125aeffe02c2c70af2fc676d507",
+                "reference": "b5f599b55d114125aeffe02c2c70af2fc676d507",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.3.13"
+            },
+            "time": "2022-02-22T09:04:14+00:00",
+            "default-branch": true,
+            "type": "magento2-language",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza team",
+                    "email": "hi@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Leader"
+                }
+            ],
+            "description": "German language package for Magento 2",
+            "homepage": "https://www.mageplaza.com",
+            "support": {
+                "issues": "https://github.com/mageplaza/magento-2-german-language-pack/issues",
+                "source": "https://github.com/mageplaza/magento-2-german-language-pack/tree/master"
+            },
+            "install-path": "../mageplaza/magento-2-german-language-pack"
+        },
+        {
+            "name": "mageplaza/magento-2-italian-language-pack",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-italian-language-pack.git",
+                "reference": "f5b04611ad2c515e245550a2e359f6f45ce4330f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-italian-language-pack/zipball/f5b04611ad2c515e245550a2e359f6f45ce4330f",
+                "reference": "f5b04611ad2c515e245550a2e359f6f45ce4330f",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.3.13"
+            },
+            "time": "2022-02-22T09:04:35+00:00",
+            "default-branch": true,
+            "type": "magento2-language",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza team",
+                    "email": "hi@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Leader"
+                }
+            ],
+            "description": "Italian language package for Magento 2",
+            "homepage": "https://www.mageplaza.com",
+            "support": {
+                "issues": "https://github.com/mageplaza/magento-2-italian-language-pack/issues",
+                "source": "https://github.com/mageplaza/magento-2-italian-language-pack/tree/master"
+            },
+            "install-path": "../mageplaza/magento-2-italian-language-pack"
+        },
+        {
+            "name": "mageplaza/module-core",
+            "version": "1.4.12",
+            "version_normalized": "1.4.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/module-core.git",
+                "reference": "85d1074fdee1259d438618c977ba6e21b76c4f39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/85d1074fdee1259d438618c977ba6e21b76c4f39",
+                "reference": "85d1074fdee1259d438618c977ba6e21b76c4f39",
+                "shasum": ""
+            },
+            "time": "2022-05-30T03:41:05+00:00",
+            "type": "magento2-module",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Mageplaza Core for Magento 2",
+            "support": {
+                "issues": "https://github.com/mageplaza/module-core/issues",
+                "source": "https://github.com/mageplaza/module-core/tree/v1.4.12"
+            },
+            "install-path": "../mageplaza/module-core"
+        },
+        {
+            "name": "mageplaza/module-smtp",
+            "version": "4.7.2",
+            "version_normalized": "4.7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-smtp.git",
+                "reference": "e7e0d63649b05b0a4335108472b7a8a16e544094"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-smtp/zipball/e7e0d63649b05b0a4335108472b7a8a16e544094",
+                "reference": "e7e0d63649b05b0a4335108472b7a8a16e544094",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.4.12"
+            },
+            "time": "2022-05-30T04:06:20+00:00",
+            "type": "magento2-module",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Smtp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "SMTP Extension for Magento 2 helps the owner of store simply install SMTP (Simple Mail Transfer Protocol) server which transmits the messages into codes or numbers",
+            "keywords": [
+                "Facebook ADS",
+                "Marketing Automation",
+                "Messenger",
+                "email",
+                "email marketing",
+                "email settings",
+                "facebook",
+                "gmail smtp",
+                "google ads",
+                "magento 2",
+                "magento 2 smtp",
+                "magento smtp",
+                "mageplaza",
+                "sms",
+                "sms marketing",
+                "smtp",
+                "web push notification",
+                "whatsapp"
+            ],
+            "support": {
+                "issues": "https://github.com/mageplaza/magento-2-smtp/issues",
+                "source": "https://github.com/mageplaza/magento-2-smtp/tree/v4.7.2"
+            },
+            "install-path": "../mageplaza/module-smtp"
         },
         {
             "name": "monolog/monolog",
