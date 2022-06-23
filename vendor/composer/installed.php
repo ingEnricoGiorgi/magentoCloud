@@ -178,6 +178,15 @@
             'reference' => '05241f28dfcba2b51b11e2d750e296316ebbe518',
             'dev_requirement' => false,
         ),
+        'caravelx/module-graphql-config' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'magento2-module',
+            'install_path' => __DIR__ . '/../caravelx/module-graphql-config',
+            'aliases' => array(),
+            'reference' => '4d657e7cab817cf6bf37ae4b7e0d809ed2ee9543',
+            'dev_requirement' => false,
+        ),
         'christian-riesen/base32' => array(
             'pretty_version' => '1.6.0',
             'version' => '1.6.0.0',
@@ -542,6 +551,15 @@
             'install_path' => __DIR__ . '/../google/recaptcha',
             'aliases' => array(),
             'reference' => '614f25a9038be4f3f2da7cbfd778dc5b357d2419',
+            'dev_requirement' => false,
+        ),
+        'graycore/magento2-cors' => array(
+            'pretty_version' => 'v1.6.0',
+            'version' => '1.6.0.0',
+            'type' => 'magento2-module',
+            'install_path' => __DIR__ . '/../graycore/magento2-cors',
+            'aliases' => array(),
+            'reference' => '9990a98d486dcf7b77ccefc97ef75dbde6c1eeaf',
             'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(

@@ -20,6 +20,8 @@
     },
     "version": "2.4.3-p2",
     "require": {
+        "caravelx/module-graphql-config": "^1.0",
+        "graycore/magento2-cors": "^1.6",
         "imaginaerum/magento2-language-fr-fr": "*",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~2.0",

@@ -491,6 +491,8 @@ return array(
     '3109cb1a231dcd04bee1f9f620d46975' => $vendorDir . '/paragonie/sodium_compat/autoload.php',
     'aa75ea0761a2f40c1f3b32ad314f86c4' => $vendorDir . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
     '940abd8fb01ee76a36b44f35dcf9783b' => $vendorDir . '/weew/helpers-array/src/array.php',
+    '50bc6fa4474e0b38cf02face311b8d1e' => $vendorDir . '/caravelx/module-graphql-config/registration.php',
+    '8b89d0ad1bc632256b228994419f47cc' => $vendorDir . '/graycore/magento2-cors/registration.php',
     'b56d63e43f5d85dd897f087eabe8b81e' => $vendorDir . '/imaginaerum/magento2-language-fr-fr/registration.php',
     'eda65932675b68b5aee4503e0762d64d' => $vendorDir . '/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php',
     'd28b91ce6d9511596c309c8d67b24b7e' => $vendorDir . '/mageplaza/magento-2-german-language-pack/registration.php',

@@ -492,6 +492,8 @@ class ComposerStaticInit8a835f690b10554a7809e1cd129bdd89
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'aa75ea0761a2f40c1f3b32ad314f86c4' => __DIR__ . '/..' . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
         '940abd8fb01ee76a36b44f35dcf9783b' => __DIR__ . '/..' . '/weew/helpers-array/src/array.php',
+        '50bc6fa4474e0b38cf02face311b8d1e' => __DIR__ . '/..' . '/caravelx/module-graphql-config/registration.php',
+        '8b89d0ad1bc632256b228994419f47cc' => __DIR__ . '/..' . '/graycore/magento2-cors/registration.php',
         'b56d63e43f5d85dd897f087eabe8b81e' => __DIR__ . '/..' . '/imaginaerum/magento2-language-fr-fr/registration.php',
         'eda65932675b68b5aee4503e0762d64d' => __DIR__ . '/..' . '/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php',
         'd28b91ce6d9511596c309c8d67b24b7e' => __DIR__ . '/..' . '/mageplaza/magento-2-german-language-pack/registration.php',
@@ -1034,6 +1036,7 @@ class ComposerStaticInit8a835f690b10554a7809e1cd129bdd89
             'GuzzleHttp\\' => 11,
             'Gt\\Dom\\' => 7,
             'Gt\\CssXPath\\' => 12,
+            'Graycore\\Cors\\' => 14,
             'GraphQL\\' => 8,
         ),
         'F' => 
@@ -1071,6 +1074,7 @@ class ComposerStaticInit8a835f690b10554a7809e1cd129bdd89
             'Codeception\\PHPUnit\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
+            'Caravel\\GraphQlConfig\\' => 22,
         ),
         'B' => 
         array (
@@ -3040,6 +3044,10 @@ class ComposerStaticInit8a835f690b10554a7809e1cd129bdd89
         array (
             0 => __DIR__ . '/..' . '/phpgt/cssxpath/src',
         ),
+        'Graycore\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graycore/magento2-cors',
+        ),
         'GraphQL\\' => 
         array (
             0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
@@ -3140,6 +3148,10 @@ class ComposerStaticInit8a835f690b10554a7809e1cd129bdd89
         array (
             0 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
             1 => __DIR__ . '/..' . '/codeception/stub/src',
+        ),
+        'Caravel\\GraphQlConfig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/caravelx/module-graphql-config',
         ),
         'Brick\\VarExporter\\' => 
         array (
