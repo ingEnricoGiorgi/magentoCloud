@@ -12,6 +12,10 @@
             <block class="Magento\Framework\View\Element\Template" name="custom_attribute_print" template="Magento_Catalog::stampa_attributi_prodotto.phtml"></block>
 
         </referenceContainer>
+        <referenceContainer name="content">
+            <referenceBlock name="category.product.addto" remove="true" />
+        </referenceContainer>
+          
         
     </body>
 </page>

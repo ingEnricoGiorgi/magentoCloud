@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66eeadb73660efb56d75319225a9450b",
+    "content-hash": "48df08f0e3a38d7bdb2b05cbcbed4db1",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -20491,6 +20491,50 @@
             "time": "2020-12-02T21:12:59+00:00"
         },
         {
+            "name": "mageplaza/magento-2-french-language-pack",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-french-language-pack.git",
+                "reference": "c8eb886df59fdc824ec8842d9ef11d8b845732b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-french-language-pack/zipball/c8eb886df59fdc824ec8842d9ef11d8b845732b1",
+                "reference": "c8eb886df59fdc824ec8842d9ef11d8b845732b1",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.3.13"
+            },
+            "default-branch": true,
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza team",
+                    "email": "hi@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Leader"
+                }
+            ],
+            "description": "French language package for Magento 2",
+            "homepage": "https://www.mageplaza.com",
+            "support": {
+                "issues": "https://github.com/mageplaza/magento-2-french-language-pack/issues",
+                "source": "https://github.com/mageplaza/magento-2-french-language-pack/tree/master"
+            },
+            "time": "2022-02-22T09:04:10+00:00"
+        },
+        {
             "name": "mageplaza/magento-2-german-language-pack",
             "version": "dev-master",
             "source": {
@@ -20615,12 +20659,12 @@
             "version": "4.7.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/2tvenom/CBOREncode.git",
+                "url": "https://github.com/mageplaza/magento-2-smtp.git",
                 "reference": "e7e0d63649b05b0a4335108472b7a8a16e544094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/2tvenom/CBOREncode/zipball/e7e0d63649b05b0a4335108472b7a8a16e544094",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-smtp/zipball/e7e0d63649b05b0a4335108472b7a8a16e544094",
                 "reference": "e7e0d63649b05b0a4335108472b7a8a16e544094",
                 "shasum": ""
             },
@@ -31104,6 +31148,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mageplaza/magento-2-french-language-pack": 20,
         "mageplaza/magento-2-german-language-pack": 20,
         "mageplaza/magento-2-italian-language-pack": 20
     },
@@ -31111,5 +31156,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }
