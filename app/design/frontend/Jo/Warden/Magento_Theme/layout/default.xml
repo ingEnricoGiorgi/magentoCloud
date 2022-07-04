@@ -7,6 +7,9 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+       
+       
+       
         <referenceContainer name="header.panel">
         
           <block class="Magento\Framework\View\Element\Template" name="custom_login" template="Magento_Theme::login.phtml"></block>
@@ -17,7 +20,22 @@
             <block name="test-glide" class="Magento\Framework\View\Element\Template" template="Magento_Theme::glide.phtml" />
 		<block name="test-bootstrap" class="Magento\Framework\View\Element\Template" template="Magento_Theme::test-bootstrap.phtml" />
         </referenceContainer>
-        
+
+    <referenceContainer name="page.wrapper">
+        <container name="page.top.after" label="After Page Top" after="page.top"/>
+    </referenceContainer>
+
+    <referenceContainer name="page.top.after">
+        <!--detro catalog product view lo rimuovo-->   
+        <block class="Magento\Framework\View\Element\Template" name="top.search.copy" as="topSearchCopy" template="Magento_Search::form.mini.phtml">
+            <arguments>
+                <argument name="configProvider" xsi:type="object">Magento\Search\ViewModel\ConfigProvider</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+
+
+
         <referenceContainer name="footer" htmlClass="footer content row">
          <block class="Magento\Framework\View\Element\Template" name="footer-1colonna" template="Magento_Theme::footer_img.phtml" />
             <referenceBlock name="footer_links">
