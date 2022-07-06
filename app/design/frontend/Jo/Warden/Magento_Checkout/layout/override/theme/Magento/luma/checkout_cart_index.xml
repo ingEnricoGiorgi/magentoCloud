@@ -17,6 +17,7 @@
                     <container name="checkout.cart.container" htmlTag="div" htmlClass="cart-container" before="-">
                         <container name="checkout.cart.form.before" as="form_before" label="Shopping Cart Items Before" htmlTag="div" htmlClass="rewards"/>
                         <container name="cart.summary" label="Cart Summary Container" htmlTag="div" htmlClass="cart-summary" after="-">
+                     <!-- scommentare
                             <block class="Magento\Framework\View\Element\Template" name="checkout.cart.summary.title" before="-" template="Magento_Theme::text.phtml">
                                 <arguments>
                                     <argument translate="true" name="text" xsi:type="string">Summary</argument>
@@ -24,6 +25,7 @@
                                     <argument name="css_class" xsi:type="string">summary title</argument>
                                 </arguments>
                             </block>
+                       -->
                             <block class="Magento\Checkout\Block\Cart\Shipping" name="checkout.cart.shipping" as="shipping" template="Magento_Checkout::cart/shipping.phtml" after="checkout.cart.summary.title">
                                 <arguments>
                                     <argument name="jsLayout" xsi:type="array">

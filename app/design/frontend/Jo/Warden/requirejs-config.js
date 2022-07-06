@@ -25,6 +25,12 @@
             'glide' : 'js/glide.min',
             'app':'js/app',
             'testjs':'js/testjs',
+           
+            custom: 'Magento_Sales/js/custom'},
+
+            'Magento_Sales/js/custom': {
+                select2: 'js/select2.min'
+            }
 
         }
     }
