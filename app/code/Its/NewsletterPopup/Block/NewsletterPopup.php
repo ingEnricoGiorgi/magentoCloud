@@ -17,13 +17,14 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
     protected $configHelper;
 
     /**
-     * @param Context         $context
+     * @param Context $context
      * @param NewsletterPopupConfig $configHelper
      */
     public function __construct(
-        Context $context,
+        Context               $context,
         NewsletterPopupConfig $configHelper
-    ) {
+    )
+    {
         parent::__construct($context);
         $this->configHelper = $configHelper;
     }
@@ -37,7 +38,8 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
     {
         return [
             'delay' => $this->_getPopupDelay(),
-            'title' => $this->_getPopupTitle()
+            'title' => $this->_getPopupTitle(),
+            'lifetime' => $this->_getPopupLifetime()
         ];
     }
 
@@ -58,7 +60,7 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
      */
     protected function _getPopupDelay()
     {
-        return (string) $this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_DELAY));
+        return (string)$this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_DELAY));
     }
 
     /**
@@ -68,6 +70,26 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
      */
     protected function _getPopupTitle()
     {
-        return (string) $this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_TITLE));
+        return (string)$this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_TITLE));
+    }
+
+    /**
+     * Newsletter Popup Lifetime.
+     *
+     * @return string
+     */
+    protected function _getPopupLifetime()
+    {
+        return (string)$this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_LIFETIME));
+    }
+
+      /**
+     * Newsletter Popup Blockid.
+     *
+     * @return string
+     */
+    protected function getPopupBlockid()
+    {
+        return (string)$this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_BLOCKID));
     }
 }

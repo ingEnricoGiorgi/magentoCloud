@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            newsletterPopup: 'Its_NewsletterPopup/js/newsletter'
+            newsletter: 'Its_NewsletterPopup/js/newsletter'
         }
     },
     config: {

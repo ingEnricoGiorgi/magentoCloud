@@ -17,6 +17,7 @@ define([
 
             var $widget = this,
                 delay   = this.options.delay,
+                lifetime = this.options.lifetime,
                 time    = this._getDelay(delay),
                 cookie = 'newsletter',
                 options = {
@@ -30,7 +31,7 @@ define([
             if (this._isCookieSet (cookie) != true )  {
 
                 this._logTime(time, function(){
-                    $widget._openModal(options, cookie);
+                    $widget._openModal(options, cookie, lifetime);
                 });
             }
 
@@ -44,13 +45,13 @@ define([
          * @private
          */
 
-        _openModal: function (options, cookie) {
+        _openModal: function (options, cookie, lifetime) {
 
             var html   = this.element,
                 popup  = modal(options, html);
 
                html.modal('openModal');
-               this._setCookie(cookie);
+               this._setCookie(cookie, lifetime);
         },
 
         /**
@@ -96,9 +97,9 @@ define([
          * @private
          */
 
-        _setCookie: function (cookie) {
+        _setCookie: function (cookie, lifetime) {
             $.mage.cookies.set(cookie, 'yes',
-                {lifetime: 342342342342});
+                options{lifetime: lifetime});
         },
 
         /**

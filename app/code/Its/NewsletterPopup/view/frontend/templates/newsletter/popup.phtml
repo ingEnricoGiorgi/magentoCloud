@@ -8,7 +8,12 @@
 <div style="display: none">
     <div class="popup-newsletter">
         <div class="content">
-            <p><?php echo $block->getPopupText();?></p>
+         <!--   <p>--><?php //echo $block->getPopupText();?> <!--   </p>-->
+         <?= $this->getLayout()
+         //content Management system
+            ->createBlock('Magento\Cms\Block')
+            ->setBlockId($block->getPopupBlockid())
+            ->toHtml(); ?>
             <?php echo $block->getChildHtml('newsletter-form'); ?>
         </div>
     </div>
@@ -16,7 +21,7 @@
 <script type="text/x-magento-init">
     {
         ".popup-newsletter": {
-            "newsletterPopup": <?php echo \Zend_Json::encode($block->getConfig()) ?>
+            "newsletter": <?php echo \Zend_Json::encode($block->getConfig()) ?>
         }
     }
 </script>
