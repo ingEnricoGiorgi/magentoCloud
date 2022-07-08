@@ -1,0 +1,21 @@
+<!-- Magento Template -->
+<div id="koexample">
+    <div data-bind="scope: 'koexample'">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+        {
+            "#koexample": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "koexample": {
+                            "component": "Its_Knockout/js/koexample",
+                            "template" : "Its_Knockout/example"
+                        }
+                    }
+                }
+            }
+        }
+</script>
