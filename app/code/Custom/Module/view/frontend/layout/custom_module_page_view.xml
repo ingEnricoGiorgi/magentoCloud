@@ -4,7 +4,7 @@
     <referenceContainer name="content">
         
         <block class="Magento\Framework\View\Element\Template" name="custom.module.layout.example" 
-        template="Custome_Module::nomefile.phtml"/>
+        template="Custom_Module::nomefile.phtml"/>
        
     </referenceContainer>
     </body>

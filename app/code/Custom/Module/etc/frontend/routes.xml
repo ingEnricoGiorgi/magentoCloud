@@ -1,6 +1,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="%routerId%">
-        <route id="%custome_module_id" frontName="module">
+    <router id="standard">
+        <route id="custom_module_id" frontName="custom">
             <module name="Custom_Module"/>
         </route>
     </router>
