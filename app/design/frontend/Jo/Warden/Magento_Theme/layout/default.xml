@@ -35,7 +35,7 @@
     </referenceContainer>
 
 
-
+    <!--FOOTER COSTUM
         <referenceContainer name="footer" htmlClass="footer content row">
          <block class="Magento\Framework\View\Element\Template" name="footer-1colonna" template="Magento_Theme::footer_img.phtml" />
             <referenceBlock name="footer_links">
@@ -45,5 +45,6 @@
             </referenceBlock> 
          <block class="Magento\Framework\View\Element\Template" name="footer-2colonna" template="Magento_Theme::footer_txt.phtml" />
         </referenceContainer>
+    -->
     </body>
 </page>
