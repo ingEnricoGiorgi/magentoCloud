@@ -1,0 +1,12 @@
+<h1>BLOCK</h1>
+<div data-bind="scope: 'componente2'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+
+<script type="text/x-magento-init"> {
+     "*":{ 
+      "Magento_Ui/js/core/app": <?= $block->getJsLayout();  ?>
+         }
+     }
+</script>

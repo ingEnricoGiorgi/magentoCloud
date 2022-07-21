@@ -26,5 +26,7 @@
         </referenceContainer>
         <!-- i move vanno messi in fondo pagina -->
         <move element="custom_banner" as="alias_banner" destination="page.top" after="navigation.sections"/>
-        <move element="glide" as="alias_glide" destination="page.top" after="navigation.sections"/>
+        <!-- 
+            <move element="glide" as="alias_glide" destination="page.top" after="navigation.sections"/>
+        -->   
     </layout>

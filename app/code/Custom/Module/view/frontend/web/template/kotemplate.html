@@ -1,0 +1,27 @@
+<h1> KOTEMPLATE</h1>
+
+<li repeat="foreach: customTasks, item: 'ticket'">
+
+    <span translate="ticket().idt"></span>
+    <span translate="ticket().ticket"></span>
+    <span translate="ticket().status"></span>
+    <a data-bind="
+    attr: {
+      class: 'status-ticket-' + (ticket().status ? 'complete' : 'open' )
+      'data-id':ticket().idt
+   
+    },
+    click: cambiaStatus">Link</a>
+  <!--
+    <span translate="ticket().idt"></span>
+
+
+
+
+--> 
+     
+   
+</li>
+
+                                
+ 

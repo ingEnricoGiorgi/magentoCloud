@@ -1,0 +1,34 @@
+<div data-bind="scope: 'custom'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<!--
+{
+"utent1":{"nome":"enrico1","cognome":"giorgi1"},
+"utente2":{"nome":"enrico2","cognome":"giorgi2"},
+"utente3":{"nome":"enrico3","cognome":"giorgi3"}
+}
+-->
+
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "Magento_Ui/js/core/app": {
+                "components" : {
+                    "custom": {
+                        "component": "Custom_Module/js/view/custom",
+                        "template": "Custom_Module/kotemplate",
+                        "customTasks": [
+                        {"idt":1,"ticket": " TESTO Ticket 1"},
+                        {"idt":2,"ticket": " TESTO Ticket 2"},
+                        {"idt":3,"ticket": " TESTO Ticket 3"}
+                        ]
+
+                    }
+                }
+            }
+        }
+    }
+</script>
+<!-- custom è il nome del.js -->
+

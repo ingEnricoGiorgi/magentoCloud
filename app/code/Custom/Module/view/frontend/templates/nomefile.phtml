@@ -1,5 +1,60 @@
+<?php 
+$data = $block->getData("my_key");
+
+
+//print_r ($data);
+//exit;
+?>
+
 
 <h1>The button Element</h1>
 
 <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+
+
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>nome</th>
+    <th>cognome</th>
+    <th>email</th>
+    <th>id</th>
+    <th>testo</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <?php
+    foreach($data as $key=>$val){
+      foreach($val as $valdue){
+        ?><td><?php echo $valdue;  
+   //     $array[$val]=$valdue;
+   //     $str = serialize($array);
+   //     $strenc = urlencode($str)
+        //$url ='http://page_no_2.php?data=".$strenc."';
+        ?></td><?php
+       
+      }
+     ?>  <td><a href='https://enrico.reflexmania.it/custom/page/tickets'>link</a></td></tr> <?php
+      }
+    
+ 
+
+    ?>
+   
+   <!-- <a href='https://enrico.reflexmania.it/custom/page/tickets?data=".$strenc."'>link</a></td></tr> -->
+  
+ 
+  
+</table>
+
  
