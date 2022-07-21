@@ -2,5 +2,21 @@
 <?php
 
 echo $block->print();
+//echo $block->getCustomerName();
+echo "<br>";
+//var_dump($block->isCustomerLoggedin());
+echo "<a href=".$block->isCustomerLoggedin().">Link</a>";
 
+echo "<br>";
+echo $block->getCustomerInfo($block->getId());
+echo "<br>";
+echo $block->getemail($block->getId());
+echo "<br>";
+echo "PRODOTTO";
+echo "<br>";
 
+echo $block->getidBySku();
+echo "<br>";
+echo $block->getName();
+echo "<br>";
+echo $block->getPrice();
