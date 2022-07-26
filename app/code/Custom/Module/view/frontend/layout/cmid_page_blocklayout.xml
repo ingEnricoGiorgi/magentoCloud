@@ -2,11 +2,12 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
     <referenceContainer name="main">
-  <block class="Custom\Module\Block\Custom" name="cmid_blocco" template="Custom_Module::bloccoCustom.phtml"/>
-
-
-        <block class="Magento\Framework\View\Element\Template" name="cmid_page_prova" 
-        template="Custom_Module::block.phtml">
+      
+    <!--FORM-->
+    <block class="Magento\Framework\View\Element\Template" name="cmid_page_blocklayout" template="Custom_Module::form.phtml"/>
+      
+        <block class="Custom\Module\Block\Custom" name="cmid_blocco" template="Custom_Module::bloccoCustom.phtml"/>
+        <block class="Magento\Framework\View\Element\Template" name="cmid_page_prova" template="Custom_Module::block.phtml">
        <arguments>
         <argument name="jsLayout" xsi:type="array">
           <item name="components" xsi:type="array">

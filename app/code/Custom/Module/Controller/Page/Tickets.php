@@ -11,7 +11,7 @@ class Secondo extends Action
 
     public function execute() {
 
-        $users=$this->getUserList();
+
 
     /** @var Json $jsonResult */
     $resultPage=$this->resultFactory->create(ResultFactory::TYPE_PAGE);

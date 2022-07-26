@@ -1,0 +1,23 @@
+<h1> FORM TICKET </h1>
+<form action="<?php echo $block->getUrl('custom/page/blocklayout');?>" method="post" enctype="multipart/form-data">
+  <?php echo $this->getBlockHtml('formkey')?> <!-- chiave nascosta per cross origin request -->
+  <label for="lfname">NOME:</label><br>
+  <input type="text" id="fname" name="fname" value="enrico"><br>
+  <label for="llname">COGNOME:</label><br>
+  <input type="text" id="lname" name="lname" value="giorgi"><br>
+  <label for="lemail">E-MAIL:</label><br>
+  <input type="email" id="email" name="email" value="enrico.giorgi92@gmail.com"><br>
+  <label for="lidticket">ID-TICKET:</label><br>
+  <input type="number" id="idticket" name="idticket" value="0001"><br><
+  <label for="lrequest">RICHIESTA:</label><br>
+  <input type="text" id="request" name="request" value="cambio prodotto"><br>
+  <label for="lcontent">CONTENUTO:</label><br>
+  <input type="text" id="content" name="content" value="la mia reflex da 1500€ ha l'obiettivo incrinato"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+<?php
+
+
+echo $block->getUrl('custom/page/blocklayout');
