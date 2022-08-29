@@ -65,12 +65,8 @@ atlassian*
 
 /var/*
 !/var/.htaccess
-!/vendor/*
+/vendor/*
 !/vendor/.htaccess
 /generated/*
 !/generated/.htaccess
 .DS_Store
-/update/*
-/setup/*
-/lib/*
-/bin/*

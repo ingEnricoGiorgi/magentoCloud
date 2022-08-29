@@ -1,35 +1,31 @@
 <?php
 namespace Custom\Module\Controller\Page;
-    
+//require_once __DIR__ . '/app/autoload.php'; 
+require '/app/autoload.php';
     use Magento\Framework\App\Action\Action;
    // use Magento\Framework\Controller\ResultFactory;
     use PhpAmqpLib\Connection\AMQPStreamConnection;
-    use Custom\Module\Helper\invioRabbit;
+   // use Custom\Module\Helper\invioRabbit;
     use PhpAmqpLib\Message\AMQPMessage;
 
-    class BlockLayoutRabbit extends Action
+    class Send extends Action
     {
 
-        protected $helper;
+        protected $connection;
         protected $message;
-        protected function __construct(InvioRabbit $helper)
-        {
-            $this->helper = $helper;
-            $this->message="jo";
-            
-        }
+        
     public function execute()
     {
-        $connection=new AMQPStreamConnection('enrico.reflexmania.it', 5672, 'guest', 'guest','139.162.211.87');
-        $msg=new AMQPMessage($this->message);
-        $this->helper = new InvioRabbit($connection,$msg);
+        $this->connection=new AMQPStreamConnection('139.161.211.87', 5672, 'guest', 'guest','/');
+        $msg=new AMQPMessage("HELLO ZIO");
+        
         //$connection = new AMQPStreamConnection(HOST, PORT, USER, PASS, VHOST);
         
-        $channel = $connection->channel();
-
+        $channel = $this->connection->channel();
         $channel->queue_declare('hello', false, false, false, false);
+        $channel->basic_publish($msg, '', 'hello');
 
-        echo " [*] Waiting for messages. To exit press CTRL+C\n";
+       /* echo " [*] Waiting for messages. To exit press CTRL+C\n";
 
         $callback = function ($msgg) {
             echo ' [x] Received ', $msgg->body, "\n";
@@ -40,9 +36,9 @@ namespace Custom\Module\Controller\Page;
         while ($channel->is_open()) {
             $channel->wait();
         }
-
+*/
         $channel->close();
-        $connection->close();
+        $this->connection->close();
 
    }
  }

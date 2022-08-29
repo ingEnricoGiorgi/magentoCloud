@@ -1,6 +1,7 @@
 <?php
-
-require_once __DIR__ . '/vendor/autoload.php';
+namespace Custom\Module\Controller\Page;
+//require_once __DIR__ . '/app/autoload.php';
+require '/app/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');

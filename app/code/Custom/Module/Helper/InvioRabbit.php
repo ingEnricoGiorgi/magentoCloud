@@ -23,7 +23,7 @@ class InvioRabbit extends Action
     {
         //$connection = $this->amqstream->AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
       //  $connection = new AMQPStreamConnection(Config::get('rabbitmq.host'), Config::get('rabbitmq.port'), Config::get('rabbitmq.user'), Config::get('rabbitmq.pass'), Config::get('rabbitmq.vhost'));
-        $connection= new AMQPStreamConnection('enrico.reflexmania.it', 5672, 'guest', 'guest','139.162.211.87');
+        $connection= new AMQPStreamConnection('enrico.reflexmania.it', 5672, 'guest', 'guest','/');
         $channel = $connection->channel();
 
         $channel->queue_declare('hello', false, false, false, false);
