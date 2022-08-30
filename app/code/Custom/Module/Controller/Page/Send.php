@@ -1,7 +1,8 @@
 <?php
-namespace Custom\Module\Controller\Page;
-//require_once __DIR__ . '/app/autoload.php'; 
-require '/app/autoload.php';
+//namespace Custom\Module\Controller\Page;
+//require_once __DIR__ . '/app/code'; 
+require_once __DIR__ . '/vendor/autoload.php';
+//require_once 'app/autoload.php';
     use Magento\Framework\App\Action\Action;
    // use Magento\Framework\Controller\ResultFactory;
     use PhpAmqpLib\Connection\AMQPStreamConnection;
