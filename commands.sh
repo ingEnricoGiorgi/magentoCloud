@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf var/cache var/generation var/di
+sudo rm -rf var/cache var/generation var/di

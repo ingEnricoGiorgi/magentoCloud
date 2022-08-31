@@ -32,7 +32,8 @@ use Magento\Framework\UrlInterface;
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  * @since 100.0.2
  */
-abstract class Action extends AbstractAction
+
+ abstract class Action extends AbstractAction
 {
     /**
      * @var ObjectManagerInterface

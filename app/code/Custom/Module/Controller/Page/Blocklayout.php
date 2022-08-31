@@ -4,6 +4,7 @@ namespace Custom\Module\Controller\Page;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Custom\Module\Helper\InvioCurl;
+use Custom\Module\Helper\InvioCurldue;
 use Magento\Framework\App\Action\Context;
 //Custom\Module\Controller\Page\Blocklayout\Interceptor
 
@@ -11,9 +12,10 @@ use Magento\Framework\App\Action\Context;
     {
         protected $helper;
         protected $context;
-        protected function __construct(InvioCurl $helper,Context $context)
+        protected function __construct(InvioCurldue $helper,Context $context)
         {
             $this->helper = $helper;
+            $this->context = $context;
             parent::__construct($context);
         }
 

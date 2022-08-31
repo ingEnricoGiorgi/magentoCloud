@@ -80,13 +80,14 @@ $this->jsonHelper = $jsonHelper;
 */
 public function invia()
 {
-//     echo "non funziona";
-//     exit;
+  //   echo "non funziona";
+  //   exit;
 // }
 //$endpoint = "127.0.0.1:8000/magento";
 //$endpoint = "localhost:8000/magento";
 //$endpoint = "176.58.113.6/joe";//cloud fra
-$endpoint = "139.162.211.87/joe";//
+//curl http://server:5050/a/c/getName?param0=foo&param1=bar
+$endpoint = "139.162.211.87/custom/page/blocklayout/";
 /* $enabled = $this->scopeConfig->getValue('foscarini_services/confirm_order/enabled');
 if(!$enabled) {
 throw new \Exception("Cancel order service disabled");
@@ -111,6 +112,9 @@ $data=['key'=>"val"];
 // $serviceResponse = $client->request(\Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_GET, $endpoint,['body' => json_encode($data), 'headers' => ['Content-Type' => 'application/json']]);
 $serviceResponse = $client->request(\Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_GET,$endpoint,[/* 'proxy'=> 'tcp://localhost:8000', */'body' => json_encode($data), 'headers' => ['Content-Type' => 'application/json']]);
 
+   // echo $data;
+    echo "bella";
+    
 $serviceResponseContent = $serviceResponse->getBody()->getContents();
 //$this->logger->debug($serviceResponseContent);
 $serviceResponseContent = $this->jsonHelper->unserialize($serviceResponseContent);

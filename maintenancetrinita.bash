@@ -10,7 +10,8 @@ bin/magento cache:flush
 bin/magento maintenance:disable
 
 sudo chown -R enricog:www-data magentoCloud/
-chmod 777 commands.sh 
+sudo chmod -R 775 var/
+sudo chmod -R 775 var/
 
 grunt clean
 grunt exec
