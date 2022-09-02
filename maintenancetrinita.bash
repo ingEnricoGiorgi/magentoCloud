@@ -11,7 +11,7 @@ bin/magento maintenance:disable
 
 sudo chown -R enricog:www-data magentoCloud/
 sudo chmod -R 775 var/
-sudo chmod -R 775 var/
+sudo chmod -R 775 generated/
 
 grunt clean
 grunt exec
