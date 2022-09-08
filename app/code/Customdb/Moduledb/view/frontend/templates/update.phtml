@@ -1,0 +1,16 @@
+<h1> FORM TICKET </h1>
+<form action="<?php echo $block->getUrl('customdb/page/updateform');?>" method="post" enctype="multipart/form-data">
+  <?php echo $this->getBlockHtml('updateformkey')?> <!-- chiave nascosta per cross origin request -->
+  <label for="fname">NOME:</label><br>
+  <input type="text" id="nome" name="nome" value="enrico"><br>
+  <label for="lsurname">COGNOME:</label><br>
+  <input type="text" id="cognome" name="cognome" value="giorgi"><br>
+  <label for="ticket">ID:</label><br>
+  <input type="text" id="ticketid" name="ticketid" ><br>
+  <button type="submit" name="send" value="update">update</button>
+  <button>
+  <a href="https://enrico.reflexmania.it/customdb/page/ticket/">HOME</a>
+  </button>
+</form> 
+
+

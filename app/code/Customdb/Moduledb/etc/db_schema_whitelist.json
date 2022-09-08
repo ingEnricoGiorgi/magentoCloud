@@ -1,0 +1,11 @@
+{
+    "prova": {
+        "column": {
+            "number_id": true,
+            "nome": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

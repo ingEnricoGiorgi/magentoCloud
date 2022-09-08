@@ -9,10 +9,12 @@ bin/magento cache:clean
 bin/magento cache:flush 
 bin/magento maintenance:disable
 
-sudo chown -R enricog:www-data magentoCloud/
+sudo chown -R enricog:www-data var/www/html/
 sudo chmod -R 775 var/
 sudo chmod -R 775 generated/
 
+bin/magento deploy:mode:set developer
+rm - rf generated/code generated/metadata var/cache var/page_cache var/view/pre_processed
 grunt clean
 grunt exec
 grunt less

@@ -12,7 +12,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
     {
 
 
-         $installer = $setup;
+        $installer = $setup;
         $installer->startSetup();
         $connection = $installer->getConnection();
         $connection->addColumn($installer->getTable('customdb_moduledb_enricog'), 'NUOVA3', [

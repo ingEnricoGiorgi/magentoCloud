@@ -1,27 +1,21 @@
 <?php
-
 namespace Custom\Module\Controller\Page;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 
-class Secondo extends Action
+class Tickets extends Action
  {
 //private $clients = array("enrico", "francesco", "daniele");
 //private $user="enrico";
 
-    public function execute() {
-
-
+public function execute(){
 
     /** @var Json $jsonResult */
-    $resultPage=$this->resultFactory->create(ResultFactory::TYPE_PAGE);
- //c->v   v->linkcontroller che passa un parametro dal controller alla vista
- 
+    $jsonResult=$this->resultFactory->create(ResultFactory::TYPE_JSON);
+    $jsonResult->setData(['message'=>'My first Page']);
+    return $jsonResult;
+}
+   
 
-
-    return $resultPage;
-    }
-
-    
 
 }
