@@ -4,8 +4,9 @@
     <referenceContainer name="main">
       
     <!--FORM-->
-    <block class="Magento\Framework\View\Element\Template" name="cmdb_page_ticket" template="Customdb_Moduledb::ticket.phtml"/>
-
-    </referenceContainer>
+   <!-- <block class=”Magento\Framework\View\Element\Template” Name=”blocco” template=”Its_PrimoModulo::primoTemplate.phtml”/>
+    -->
+     <block class="Magento\Framework\View\Element\Template" name="cmdb_page_ticket" template="Customdb_Moduledb::ticket.phtml"/>
+     </referenceContainer>
     </body>
 </page>
