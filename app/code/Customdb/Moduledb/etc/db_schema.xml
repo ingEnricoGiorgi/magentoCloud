@@ -5,20 +5,29 @@
  * See COPYING.txt for license details.
  */
 -->
-<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd"> 
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd"> 
     <table name="prova2"  comment="Catalog Product Table">
         <column xsi:type="int" name="number_id" unsigned="true" nullable="false" identity="true" comment="number" />
        
         <column xsi:type="varchar" name="nome" comment="nome"  default="default"/>
         <column xsi:type="varchar" name="cognome" comment="cognome"  default="default"/>
-        <column xsi:type="varchar" name="ticketid" comment="ticket ID"  default="default"/>
+        <column xsi:type="int" name="ticketid" comment="ticket ID" unsigned="true" nullable="false" identity="false"  default="0" />
   <constraint xsi:type="primary" referenceId="PRIMARY">
         <column name="number_id"/>
-</constraint>
-
+  </constraint>
      
-    </table>
+</table>
+
+
+
+
+
+
+
+
+
+
+
    <!--<table name="catalog_product_entity_datetime" resource="default" engine="innodb"
            comment="Catalog Product Datetime Attribute Backend Table">
         <column xsi:type="int" name="value_id" unsigned="false" nullable="false" identity="true"

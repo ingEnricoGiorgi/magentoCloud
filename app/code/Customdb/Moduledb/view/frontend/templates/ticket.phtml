@@ -1,22 +1,24 @@
 <h2>TICKETS SECTION</h2>
 <?php 
+$result = $block->getData('tickets');
 
-$collection = $block->getData('collection');
-//echo $customParameter;
-//echo $collection->getSelect()->__toString();
-//print_r($collection);
+/*foreach($result as $ticket) {   
+  echo $ticket->getData('number_id');
+  echo $ticket->getNome();
+
+   }    */         
 ?>
-<table style="width:100%">
+<table >
+<?php foreach($result as $ticket) { ?>  
   <tr>
+    <th ><?php echo $ticket->getData('number_id'); ?> </th>
+    <th><?php  echo $ticket->getNome();  ?></th>
+    <th><?php  echo $ticket->getCognome();   ?></th>
+    <th><?php  echo $ticket->getTicketid();   ?></th>
+    
     <th><a href="https://enrico.reflexmania.it/customdb/page/insertform/">INSERT</a></th>
-    
-  </tr>
-  <tr>
     <th><a href="https://enrico.reflexmania.it/customdb/page/updateform/">UPDATE</a></th>
-    
-  </tr>
-  <tr>
     <th><a href="https://enrico.reflexmania.it/customdb/page/deleteform/">DELETE</a></th>
-    
   </tr>
+ <?php } ?> 
 </table>
