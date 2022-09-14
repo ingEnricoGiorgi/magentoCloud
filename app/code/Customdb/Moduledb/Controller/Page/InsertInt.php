@@ -15,6 +15,8 @@ use Customdb\Moduledb\Model\ResourceModel\Ticket\CollectionFactory;
     class InsertInt extends Action
     {
         protected $ticketRepo;
+        protected $ticketFactory;
+        protected $ticketInterface;
 
         protected function __construct(Context $context, TicketFactory $ticketF, TicketRepositoryInterface $ticketRepo, TicketInterface $ticketInterface)
         {
