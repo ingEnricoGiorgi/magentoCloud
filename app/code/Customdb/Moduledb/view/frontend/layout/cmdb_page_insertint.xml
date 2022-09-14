@@ -4,9 +4,8 @@
     <referenceContainer name="main">
       
     <!--FORM-->
-    <block class="Magento\Framework\View\Element\Template" name="cmdb_page_insertform" template="Customdb_Moduledb::insert.phtml"/>
-   
+    <block class="Magento\Framework\View\Element\Template" name="cmdb_page_insertint" template="Customdb_Moduledb::insertDue.phtml"/>
+
     </referenceContainer>
     </body>
 </page>
-

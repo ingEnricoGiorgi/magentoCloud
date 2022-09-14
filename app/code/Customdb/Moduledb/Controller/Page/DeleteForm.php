@@ -32,13 +32,13 @@ use Customdb\Moduledb\Model\TicketFactory;
         if (isset($_POST["ticketid"]))
         {
 
-            $ticketid = htmlspecialchars($_POST["ticketid"],ENT_QUOTES);
+            $number_id = htmlspecialchars($_POST["number_id"],ENT_QUOTES);
             $send = htmlspecialchars($_POST["send"],ENT_QUOTES);
-            $form = array('ticketid' =>$ticketid, 'send'=>$send);
+            $form = array('number_id' =>$number_id, 'send'=>$send);
             echo json_encode($form);
             
             $ticket = $this->ticketFactory->create();
-            $result=$ticket->load($ticketid);
+            $result=$ticket->load($number_id);
             $result->delete();
             echo("dati cancellati");
             $result->save();

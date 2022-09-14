@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Customdb\Moduledb\Api\TicketRepositoryInterface" type="Customdb\Moduledb\Model\TicketRepository"/>
+    <preference for="Customdb\Moduledb\Api\TicketRepositoryInterface" type="Customdb\Moduledb\Model\ResourceModel\TicketRepository"/>
     <preference for="Customdb\Moduledb\Api\Data\TicketInterface" type="Customdb\Moduledb\Model\Ticket"/>
 </config>
 

@@ -6,28 +6,30 @@
 
 namespace Customdb\Moduledb\Api;
 
+use Customdb\Moduledb\Api\Data\TicketInterface;
 /**
  * Interface TicketRepositoryInterface
  * @api
  * @since 100.1.0
  */
-interface TicketRepositoryInterface
-{
+interface TicketRepositoryInterface {
+    
     /**
      * @param int $id
+     * @return TicketInterface
      */
-    public function getById($id);
+    public function getById(int $id);
 
     /**
-     * @param TicketRepositoryInterface $ticket
-     * * @return void
+     * @param TicketInterface $ticket
+     * * @return bool
      */
-    public function save(TicketRepositoryInterface $ticket);
+    public function save(TicketInterface $ticket);
 
     /**
-     * @param TicketRepositoryInterface ticket
-     * @return void
+     * @param int ticket
+     * @return bool
      */
-    public function delete(TicketRepositoryInterface $ticket);
+    public function delete(int $ticket);
 
 }

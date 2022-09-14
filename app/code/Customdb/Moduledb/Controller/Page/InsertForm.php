@@ -9,6 +9,8 @@ use Customdb\Moduledb\Model\TicketFactory;
 
     class InsertForm extends Action
     {
+
+       protected $ticketFactory;
        
         protected function __construct(Context $context, TicketFactory $ticketF)
         {
@@ -17,8 +19,8 @@ use Customdb\Moduledb\Model\TicketFactory;
             parent::__construct($context);
         }
 
-    public function execute()
-    {
+    public function execute() {
+
          /** @var Json $jsonResult */
         $PageResult=$this->resultFactory->create(ResultFactory::TYPE_PAGE);
 
@@ -27,8 +29,8 @@ use Customdb\Moduledb\Model\TicketFactory;
         {
             $nome = htmlspecialchars($_POST["nome"],ENT_QUOTES);
             $cognome = htmlspecialchars($_POST["cognome"],ENT_QUOTES);
-            $ticketid = htmlspecialchars($_POST["ticketid"],ENT_QUOTES);
-            $form = array('nome' => $nome, 'cognome' => $cognome, 'ticketid' =>$ticketid);
+            $number_id = htmlspecialchars($_POST["number_id"],ENT_QUOTES);
+            $form = array('nome' => $nome, 'cognome' => $cognome, 'number_id' =>$number_id);
             echo json_encode($form);
             
             $ticket = $this->ticketFactory->create();

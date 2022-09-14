@@ -13,10 +13,11 @@ namespace Customdb\Moduledb\Api\Data;
  */
 interface TicketInterface
 {
-    const TICKET_ID="ticket_id";
+    const NUMBER_ID="number_id";
+    const TICKET_ID="ticketid";
     const TICKET_NOME="nome";
     const TICKET_COGNOME="cognome";
-    const NUMBER_ID="number_id";
+  
 
     /**
      * @return int
@@ -27,7 +28,7 @@ interface TicketInterface
      * @param int $ticketId
      * @return int
      */
-    public function setTicketId($ticketId); 
+    public function setTicketId($data); 
 
 
     /**
@@ -36,11 +37,11 @@ interface TicketInterface
     public function getNome();
 
      /**
-     * @param int $ticketId
+     * @param int $ticketNome
      * @return int
      */
        
-     public function setNome($ticketNome); 
+     public function setNome($data); 
 
 
     /**
@@ -49,10 +50,10 @@ interface TicketInterface
     public function getCognome();
 
      /**
-     * @param int $ticketId
+     * @param int $ticketCognome
      * @return int
      */
-    public function setCognome($ticketCognome); 
+    public function setCognome($data); 
 
 
         /**
@@ -61,9 +62,9 @@ interface TicketInterface
     public function getNumberId();
 
      /**
-     * @param int $ticketId
+     * @param int $ticketNumber
      * @return int
      */
-    public function setNumberId($ticketNumberId); 
+    public function setNumberId($data); 
     
 }

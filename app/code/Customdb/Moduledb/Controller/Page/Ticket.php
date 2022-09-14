@@ -11,7 +11,7 @@ use Customdb\Moduledb\Model\ResourceModel\Ticket\CollectionFactory;
     class Ticket extends Action
     {
        protected $resultFactory;
-       protected $tcollectionFactory;
+       protected $collectionFactory;
 
         protected function __construct(
             Context $context, 
@@ -30,7 +30,6 @@ use Customdb\Moduledb\Model\ResourceModel\Ticket\CollectionFactory;
         echo (" ci arrivo");
  
         $result = $this->collectionFactory->create();//lt sta per lesser than
-
         $result->addFieldToFilter('number_id', ['lt' => 6]);
       /*  foreach($result as $ticket){
             print_r($ticket->getData());
@@ -41,13 +40,6 @@ use Customdb\Moduledb\Model\ResourceModel\Ticket\CollectionFactory;
         
         $block = $page->getLayout()->getBlock('cmdb_page_ticket');
         $block->setData('tickets', $result);
-      /*  foreach($result as $ticket) { 
-           // $block->setData('number_id', $ticket);
-           echo $ticket->getData('number_id');
-           echo $ticket->getNome();
-
-            }       
-        exit; */
         return $page;
     }
    
