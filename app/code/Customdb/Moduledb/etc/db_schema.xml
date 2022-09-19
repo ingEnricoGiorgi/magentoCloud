@@ -12,6 +12,7 @@
         <column xsi:type="varchar" name="nome" comment="nome"  default="default"/>
         <column xsi:type="varchar" name="cognome" comment="cognome"  default="default"/>
         <column xsi:type="int" name="ticketid" comment="ticket ID" unsigned="true" nullable="false" identity="false"  default="0" />
+        <column xsi:type="varchar" name="email" comment="email" default="enrico.giorgi92@gmail.com" />
   <constraint xsi:type="primary" referenceId="PRIMARY">
         <column name="number_id"/>
   </constraint>

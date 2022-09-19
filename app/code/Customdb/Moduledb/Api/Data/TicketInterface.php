@@ -17,6 +17,7 @@ interface TicketInterface
     const TICKET_ID="ticketid";
     const TICKET_NOME="nome";
     const TICKET_COGNOME="cognome";
+    const TICKET_EMAIL="email";
   
 
     /**
@@ -66,5 +67,16 @@ interface TicketInterface
      * @return int
      */
     public function setNumberId($data); 
+    
+    /**
+     * @return int
+     */
+    public function getEmail();
+
+     /**
+     * @param int $ticketNumber
+     * @return int
+     */
+    public function setEmail($data); 
     
 }

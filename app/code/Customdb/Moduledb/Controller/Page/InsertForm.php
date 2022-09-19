@@ -39,6 +39,8 @@ use Customdb\Moduledb\Model\TicketFactory;
                 echo("dati inseriti");
                 echo "<br>";
             }
+      
+
             $ticket->save();
 
         } 

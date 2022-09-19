@@ -60,4 +60,14 @@ class Ticket extends AbstractModel implements TicketInterface
     public function setNumberId($data){
         return $this->setData(self::NUMBER_ID,$data);
     }
+     
+    public function getEmail(){
+        return $this->getData(self::TICKET_EMAIL);
+    }
+
+ 
+    public function setEmail($data){
+        return $this->setData(self::TICKET_EMAIL,$data);
+
+    } 
 }

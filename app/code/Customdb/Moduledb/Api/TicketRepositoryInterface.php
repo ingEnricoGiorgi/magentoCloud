@@ -32,4 +32,21 @@ interface TicketRepositoryInterface {
      */
     public function delete(int $ticket);
 
+    /**
+     * @param int $id
+     * @return TicketInterface
+     */
+    public function getIdCurl(int $id);
+
+    /**
+     * @param Array $ticket
+     * @return bool
+     */
+    public function saveArray(Array $ticket);
+    
+    /**
+     * @param String $ticketPost
+     * @return bool
+     */
+    public function casoBase(String $ticketPost);
 }
