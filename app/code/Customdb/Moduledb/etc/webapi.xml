@@ -4,17 +4,19 @@
     <route url="/V1/ticket/:id" method="GET">
         <service class="Customdb\Moduledb\Api\TicketRepositoryInterface" method="getIdCurl"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Customdb_Moduledb::get_request"/>
         </resources>
    
     </route>
         <route url="/V1/casobase/" method="POST">
         <service class="Customdb\Moduledb\Api\TicketRepositoryInterface" method="casoBase"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Customdb_Moduledb::post_request"/>
         </resources>
     </route>
-   
+
+
+   <!-- save Array non funziona è per bellezza -->
         <route url="/V1/postticket/:arrayticket" method="POST">
         <service class="Customdb\Moduledb\Api\TicketRepositoryInterface" method="saveArray"/>
         <resources>

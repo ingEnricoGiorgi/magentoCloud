@@ -48,5 +48,5 @@ interface TicketRepositoryInterface {
      * @param String $ticketPost
      * @return bool
      */
-    public function casoBase(String $ticketPost);
+    public function casoBase(String $token, String $nome, String $cognome, String $ticketid, String $email);
 }

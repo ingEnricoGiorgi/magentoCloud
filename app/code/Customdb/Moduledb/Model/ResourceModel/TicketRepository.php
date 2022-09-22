@@ -7,7 +7,6 @@ use Customdb\Moduledb\Api\TicketRepositoryInterface;
 use Customdb\Moduledb\Model\ResourceModel\Ticket as TicketResourceModel;
 
 
-
 class TicketRepository implements TicketRepositoryInterface
 {   
     private $ticketFactory;
@@ -64,23 +63,31 @@ class TicketRepository implements TicketRepositoryInterface
              return true;
         
     }
-    /**
-     * @param String $ticketPost
-     * @return bool
-     */
-    public function casoBase(String $ticketPost){
- 
-        echo $ticketPost;
-
-       /* $ticket = $this->ticketFactory->create();
-        echo $ticketPost['nome'];
-        $ticketArray=json_decode($ticketPost);
-        foreach($ticketArray as $key => $value) {
-            $ticket->setData($key,$value);
-            echo("dati inseriti");
-            echo "<br>";
+        /**
+         * @param String $ticketPost
+         * @return bool
+         */
+        public function casoBase(String $token, String $nome, String $cognome, String $ticketid, String $email): Bool
+        {
+    
+        
+            $ticket = $this->ticketFactory->create();
+                if($token=="tokenmagento"){
+                    echo"token autorizzato magento";
+                    echo "<br>";
+                $ticket->setData("nome",$nome);
+                $ticket->setData("cognome",$cognome);
+                $ticket->setData("ticketid",$ticketid);
+                $ticket->setData("email",$email);
+                echo("dati inseriti");
+                echo "<br>";
+                $ticket->save();
+            return true;
+            
+        }else{
+        
+            return false;
         }
-        $ticket->save();*/
-        return true;
+        
     }
 }
