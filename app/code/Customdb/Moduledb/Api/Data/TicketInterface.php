@@ -33,26 +33,26 @@ interface TicketInterface
 
 
     /**
-     * @return int
+     * @return string
      */
     public function getNome();
 
      /**
-     * @param int $ticketNome
-     * @return int
+     * @param string $ticketNome
+     * @return string
      */
        
      public function setNome($data); 
 
 
     /**
-     * @return int
+     * @return string
      */
     public function getCognome();
 
      /**
-     * @param int $ticketCognome
-     * @return int
+     * @return string $ticketCognome
+     * @return string
      */
     public function setCognome($data); 
 
@@ -69,12 +69,12 @@ interface TicketInterface
     public function setNumberId($data); 
     
     /**
-     * @return int
+     * @return string
      */
     public function getEmail();
 
      /**
-     * @param int $ticketNumber
+     * @param string $ticketEmail
      * @return int
      */
     public function setEmail($data); 

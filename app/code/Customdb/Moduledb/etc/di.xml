@@ -4,4 +4,22 @@
     <preference for="Customdb\Moduledb\Api\Data\TicketInterface" type="Customdb\Moduledb\Model\Ticket"/>
 </config>
 
+
+
+
+
+
 <!-- nel di indichiamo che usiamo le interface al posto del model e del repository -->
+
+<!--model su magento
+poi service contract
+a cui ci colleghiamo con api esterne
+con di.xml tutte le volte che utlizziamo il model utilizziamo le interfacce
+le interfacce ci collegano col model
+webapi.xml ci colleghiamo con api con un servizio esternpo
+poi facciamo acl access control list con chiave api
+però per creare questo token andiamo su system integrazione per creare utenenti dal backend
+acl + api
+insert x-forwarded-for 55.55.55.55 su richiesta api; devo fare poi check su symfony
+
+-->

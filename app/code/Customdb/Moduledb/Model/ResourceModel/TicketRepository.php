@@ -90,4 +90,10 @@ class TicketRepository implements TicketRepositoryInterface
         }
         
     }
+    public function postIdCurl(int $id):TicketInterface  //TicketFa
+    {
+        $ticket = $this->ticketFactory->create();
+        $result=$ticket->load($id);
+        return $result; 
+    }
 }

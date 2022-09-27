@@ -6,6 +6,7 @@
            <resource id="Customdb_Moduledb::request_postman" title="all request postman" sortOrder="110" >
              <resource id="Customdb_Moduledb::get_request" title="get request" sortOrder="10" />
               <resource id="Customdb_Moduledb::post_request" title="post request" sortOrder="11" />
+               <resource id="Customdb_Moduledb::post_request_due" title="post request due" sortOrder="12" />
 
            <!--    <resource id="Customdb_Moduledb::create" title="Create" sortOrder="50" />
              <resource id="Customdb_Moduledb::delete" title="Delete" sortOrder="100" />
