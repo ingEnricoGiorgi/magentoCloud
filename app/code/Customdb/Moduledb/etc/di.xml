@@ -9,7 +9,7 @@
 
 
 
-<!-- nel di indichiamo che usiamo le interface al posto del model e del repository -->
+<!-- nel di.xml indichiamo che usiamo le interface al posto del model e del repository -->
 
 <!--model su magento
 poi service contract
