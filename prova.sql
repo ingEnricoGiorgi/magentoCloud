@@ -67,4 +67,4 @@ FROM Dipendenti,
 ORDER BY
 FIRST_TABLE.salario ASC LIMIT 1;
 */
-/*cambio
+/*cambio due
