@@ -1,0 +1,16 @@
+name: m2-install-actions
+on: [push]
+jobs:
+  magento2-install:
+    runs-on: ubuntu-latest
+    name: 'magento install & push'      
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'install fresh magento and copy to repo'
+      uses: MAD-I-T/magento-actions@v3.15
+      env:
+        COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
+      with:
+        process: 'create-project'
+        magento_version: 2.3.0
+#       no_push: 1 //uncomment this to prevent files from getting pushed to repo
